@@ -58,7 +58,7 @@ public class RPInterpolator implements Interpolator {
     public float getInterpolation(float elapsedTimeRate) {
         switch (mEasing) {
             case LINEAR:
-                return 1f;
+                return elapsedTimeRate;
 
             case SINE_IN:
                 return (float) (1f - Math.cos(elapsedTimeRate * Math.PI / 2f));
@@ -115,10 +115,10 @@ public class RPInterpolator implements Interpolator {
                 return getBackInOut(elapsedTimeRate, 1.7f);
 
             case EXPO_IN:
-                return (float) Math.pow(2, 10 * (elapsedTimeRate - 1));
+                return (elapsedTimeRate == 0) ? 0 : (float) Math.pow(2, 10 * (elapsedTimeRate - 1));
 
             case EXPO_OUT:
-                return -((float) Math.pow(2, -10 * elapsedTimeRate) + 1);
+                return (elapsedTimeRate == 1) ? 1 : (-(float)Math.pow(2, -10 * elapsedTimeRate) + 1);
 
             case EXPO_IN_OUT:
                 if (elapsedTimeRate == 0) {
