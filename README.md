@@ -1,6 +1,8 @@
 # AndroidRPInterpolator
 AndroidRPInterpolator is the interpolator library using [Rovert Penner's Easing Functions](http://robertpenner.com/easing/).
 
+![easing.gif](art/easing.gif)
+
 ## Usage
 ```
 ObjectAnimator animator = ObjectAnimator.ofFloat(mTargetView, "translationX", 0, 300);
