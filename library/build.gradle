@@ -29,7 +29,7 @@ publish {
     userOrg = 'r21nomi'
     groupId = 'com.github.r21nomi'
     artifactId = 'androidrpinterpolator'
-    publishVersion = '0.1.0'
+    publishVersion = '1.0.0'
     desc = 'AndroidRPInterpolator is the interpolator library using Rovert Penner\'s Easing Functions.'
     website = 'https://github.com/r21nomi/AndroidRPInterpolator'
 }

@@ -6,14 +6,14 @@ AndroidRPInterpolator is the interpolator library using [Rovert Penner's Easing 
 ## Getting Started
 ```groovy
 dependencies {
-  compile 'com.github.r21nomi:androidrpinterpolator:0.1.0'
+  compile 'com.github.r21nomi:androidrpinterpolator:1.0.0'
 }
 ```
 
 ## Usage
 ```java
 ObjectAnimator animator = ObjectAnimator.ofFloat(mTargetView, "translationX", 0, 300);
-animator.setInterpolator(new RPInterpolator(RPInterpolator.Easing.SINE_IN_OUT));
+animator.setInterpolator(new RPInterpolator(Easing.SINE_IN_OUT));
 animator.start();
 ```
 
