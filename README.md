@@ -1,4 +1,6 @@
 # AndroidRPInterpolator
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidRPInterpolator-green.svg?style=true)](https://android-arsenal.com/details/1/3223)
+
 AndroidRPInterpolator is the interpolator library using [Rovert Penner's Easing Functions](http://robertpenner.com/easing/).
 
 ![easing.gif](art/easing.gif)
